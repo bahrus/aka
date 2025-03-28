@@ -2,19 +2,32 @@
   "name": "xp-as",
   "version": "0.0.0",
   "description": "",
-  "homepage": "https://github.com/bahrus/aka#readme",
+  "homepage": "https://github.com/bahrus/xp-as#readme",
   "bugs": {
-    "url": "https://github.com/bahrus/aka/issues"
+    "url": "https://github.com/bahrus/xp-as/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bahrus/aka.git"
+    "url": "git+https://github.com/bahrus/xp-as.git"
   },
-  "license": "ISC",
+  "license": "MIT",
   "author": "",
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "playwright test",
+    "serve": "python3 ./node_modules/ssi-server/ssi_server.py",
+    "safari": "npx playwright wk http://localhost:3030",
+    "update": "ncu -u && npm install"
+  },
+  "dependencies": {
+    "be-enhanced": "0.0.170",
+    "be-hive": "0.0.250",
+    "mount-observer": "0.0.45",
+    "trans-render": "0.0.889"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.51.1",
+    "ssi-server": "0.0.1"
   }
 }
