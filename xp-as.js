@@ -1,7 +1,6 @@
 // @ts-check
 import { propInfo, rejected, resolved } from 'be-enhanced/cc.js';
 import { BE } from 'be-enhanced/BE.js';
-import {dispatchEvent as de} from 'trans-render/positractions/dispatchEvent.js';
 /** @import {BEConfig, IEnhancement, BEAllProps} from './ts-refs/be-enhanced/types.d.ts' */
 /** @import {Actions, PAP, AllProps, AP} from './ts-refs/xp-as/types' */;
 /** @import {EnhancementInfo} from './ts-refs/trans-render/be/types' */
@@ -17,7 +16,6 @@ class XpAs extends BE {
     static config = {
     };
 
-    de = de;
 
     props = new EventTarget();
 
