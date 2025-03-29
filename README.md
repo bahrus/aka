@@ -4,7 +4,7 @@
 <table>
     <tr id=testRow aria-rowindex=11
         xp-as
-        xp-as-a-from=aria-rowindex
+        xp-as-a=aria-rowindex
     >
         <td>
             ...
@@ -29,7 +29,7 @@
 
 A number of shortcuts are available:
 
-In less formal environments, and/or in environments where this element enhancement is widely used, we can replace the relatively short xp-as with an even shorter name, wuch as  📎, which this package supports.  On Windows OS, you can access this emoji by typing 🪟 + "." and search for "clippy".  Also, the "-from" part of the attribute is optional.  So this also works if one references 📎.js instead of emc.js:
+In less formal environments, and/or in environments where this element enhancement is widely used, we can replace the relatively short *xp-as* with an even shorter name, such as  📎, which this package supports.  On Windows OS, you can access this emoji by typing 🪟 + "." and search for "clippy".  So this also works if one references 📎.js instead of emc.js:
 
 
 ```html

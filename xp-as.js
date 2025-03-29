@@ -71,9 +71,8 @@ class XpAs extends BE {
     #processAttr(attrName) {
         const baseLen = this.#base.length;
         if(attrName.length !== baseLen && attrName.startsWith(this.#base)){
-            const len = attrName.length;
-            const rhsTruncationLen = attrName.endsWith('-from') ? 5 : 0; // if it ends with '-from', remove 5 from length to get the actual length of the attribute name
-            const propName = attrName.substring(baseLen + 1, len - rhsTruncationLen); // remove 'xp-as-' and '-from'
+            //const len = attrName.length;
+            const propName = attrName.substring(baseLen + 1); // remove 'xp-as-' and '-from'
             const secondaryAttrName = this.enhancedElement.getAttribute(attrName);
             if(secondaryAttrName === null) throw 500; // no secondary attribute to watch
             this.#propsToWatch.set(secondaryAttrName, propName);
