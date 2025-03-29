@@ -25,7 +25,7 @@
 
 "xp" is short for "export".
 
-## Shortcuts [Untested]
+## Shortcuts
 
 A number of shortcuts are available:
 

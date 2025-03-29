@@ -31,12 +31,18 @@ class XpAs extends BE {
     #propsToWatch = new Map();
 
     /**
+     * @type {string}
+     */
+    #base;
+
+    /**
      * 
      * @param {Element} el 
      * @param {EnhancementInfo} enhancementInfo 
      */
     async attach(el, enhancementInfo){
         await super.attach(el, enhancementInfo);
+        this.#base = /** @type {string} */ (enhancementInfo.mountCnfg.base);
         this.#mutationObserver = new MutationObserver((mutations) => {
             for (const mutation of mutations) {
                 if (mutation.type === 'attributes') {
@@ -63,10 +69,11 @@ class XpAs extends BE {
      * @param {string} attrName 
      */
     #processAttr(attrName) {
-        if(attrName.startsWith('xp-as-')){
+        const baseLen = this.#base.length;
+        if(attrName.length !== baseLen && attrName.startsWith(this.#base)){
             const len = attrName.length;
             const rhsTruncationLen = attrName.endsWith('-from') ? 5 : 0; // if it ends with '-from', remove 5 from length to get the actual length of the attribute name
-            const propName = attrName.substring(6, len - rhsTruncationLen); // remove 'xp-as-' and '-from'
+            const propName = attrName.substring(baseLen + 1, len - rhsTruncationLen); // remove 'xp-as-' and '-from'
             const secondaryAttrName = this.enhancedElement.getAttribute(attrName);
             if(secondaryAttrName === null) throw 500; // no secondary attribute to watch
             this.#propsToWatch.set(secondaryAttrName, propName);
