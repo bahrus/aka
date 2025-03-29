@@ -1,6 +1,6 @@
 {
   "name": "xp-as",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": [
     "web-components",
     "web-component",
@@ -24,8 +24,8 @@
   "main": "xp-as.js",
   "module": "xp-as.js",
   "exports": {
-    ".": "./xp-as.js", 
-    "./xp-as.js": "./xp-as.js", 
+    ".": "./xp-as.js",
+    "./xp-as.js": "./xp-as.js",
     "./emc.js": "./emc.js",
     "./📎.js": "./📎.js"
   },
