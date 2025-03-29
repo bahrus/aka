@@ -35,8 +35,7 @@ In less formal environments, and/or in environments where this element enhanceme
 ```html
 <table>
     <tr id=testRow aria-rowindex=11
-        📎
-        📎-a=aria-rowindex
+        📎📎-a=aria-rowindex
     >
         <td>
             ...
