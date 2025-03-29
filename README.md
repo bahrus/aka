@@ -23,13 +23,18 @@
 </script>
 ```
 
-or 
+## Shortcuts [TODO]
+
+A number of shortcuts are available:
+
+In less formal environments, and/or in environments where this element enhancement is widely used, we can replace the relatively short xp-as with an even shorter name, like 📎.  Also, the "-from" part of the attribute is optional.  So this also works if one references 📎.js instead of emc.js:
+
 
 ```html
 <table>
     <tr id=testRow aria-rowindex=11
         📎
-        xp-as-a-from=aria-rowindex
+        📎-a=aria-rowindex
     >
         <td>
             ...
@@ -37,7 +42,7 @@ or
     </tr>
 </table>
 <script>
-    const xpAs = testRow.beEnhanced.xpAs;
+    const xpAs = testRow.beEnhanced.📎;
     console.log(xpAs.props.a - 3);
     // 8
     xpAs.props.addEventListener('a', e => {
