@@ -1,7 +1,15 @@
 {
   "name": "xp-as",
   "version": "0.0.1",
-  "description": "",
+  "keywords": [
+    "web-components",
+    "web-component",
+    "custom-element",
+    "custom-elements",
+    "enhancement",
+    "behavior"
+  ],
+  "description": "Export attributes from adorned element via a predictable API.",
   "homepage": "https://github.com/bahrus/xp-as#readme",
   "bugs": {
     "url": "https://github.com/bahrus/xp-as/issues"
@@ -13,7 +21,19 @@
   "license": "MIT",
   "author": "",
   "type": "module",
-  "main": "index.js",
+  "main": "xp-as.js",
+  "module": "xp-as.js",
+  "exports": {
+    ".": "./xp-as.js", 
+    "./xp-as.js": "./xp-as.js", 
+    "./emc.js": "./emc.js",
+    "./📎.js": "./📎.js"
+  },
+  "files": [
+    "*.js",
+    "./ts-refs/xp-as/types.d.ts",
+    "README.md"
+  ],
   "scripts": {
     "test": "playwright test",
     "serve": "python3 ./node_modules/ssi-server/ssi_server.py",

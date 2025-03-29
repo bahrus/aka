@@ -1,5 +1,12 @@
 # xp-as (📎)
 
+[![Playwright Tests](https://github.com/bahrus/xp-as/actions/workflows/CI.yml/badge.svg?branch=baseline)](https://github.com/bahrus/xp-as/actions/workflows/CI.yml)
+[![NPM version](https://badge.fury.io/js/xp-as.png)](http://badge.fury.io/js/xp-as)
+[![How big is this package in your project?](https://img.shields.io/bundlephobia/minzip/xp-as?style=for-the-badge)](https://bundlephobia.com/result?p=xp-as)
+<img src="http://img.badgesize.io/https://cdn.jsdelivr.net/npm/xp-as?compression=gzip">
+
+Export attributes from adorned element via a predictable API.
+
 ```html
 <table>
     <tr id=testRow aria-rowindex=11
