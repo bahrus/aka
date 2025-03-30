@@ -84,13 +84,22 @@ class XpAs extends BE {
         }
     }
 
+    #tryParse(val){
+        try {
+            return JSON.parse(val);
+        } catch (e) {
+            // fallback to returning the raw value if parsing fails
+            return val;
+        }
+    }
+
     /**
      * 
      * @param {string} attrName 
      */
     #propagateAttr(attrName) {
         const rawVal = this.enhancedElement.getAttribute(attrName);
-        const value = rawVal === null ? rawVal : JSON.parse(rawVal);
+        const value = rawVal === null ? rawVal : this.#tryParse(rawVal);
         const propName = this.#propsToWatch.get(attrName);
         if(propName === undefined) throw 500; // no property to set
         this.props[propName] = value;
