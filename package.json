@@ -19,7 +19,7 @@
     "url": "git+https://github.com/bahrus/xp-as.git"
   },
   "license": "MIT",
-  "author": "",
+  "author": "anderson.bruce.b@gmail.com",
   "type": "module",
   "main": "xp-as.js",
   "module": "xp-as.js",

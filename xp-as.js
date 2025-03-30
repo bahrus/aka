@@ -60,8 +60,7 @@ class XpAs extends BE {
         }
         this.#mutationObserver.observe(el, {
             attributes: true, 
-            
-        })
+        });
     }
 
     /**
