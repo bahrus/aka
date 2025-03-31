@@ -6,14 +6,14 @@
     <title>Document</title>
     <!-- #include virtual="/imports.html" -->
      <script type=module>
-        import '/📎.js';
+        import '/📌.js';
      </script>
 </head>
 <body>
     <table>
         <tr id=testRow aria-rowindex=11
-            📎
-            📎-a=aria-rowindex
+            📌
+            📌-a=aria-rowindex
         >
             <td>
                 ...
@@ -23,7 +23,7 @@
     <button onclick=test()>Test</button>
     <script>
         function test(){
-            const xpAs = testRow.beEnhanced['📎'];
+            const xpAs = testRow.beEnhanced['📌'];
             console.log(xpAs.props.a - 3);
             // 8
             xpAs.props.addEventListener('a', e => {

@@ -27,7 +27,7 @@
     ".": "./xp-as.js",
     "./xp-as.js": "./xp-as.js",
     "./emc.js": "./emc.js",
-    "./📎.js": "./📎.js"
+    "./📌.js": "./📌.js"
   },
   "files": [
     "*.js",

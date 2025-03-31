@@ -1,4 +1,4 @@
-# xp-as (📎)
+# xp-as (�)
 
 [![Playwright Tests](https://github.com/bahrus/xp-as/actions/workflows/CI.yml/badge.svg?branch=baseline)](https://github.com/bahrus/xp-as/actions/workflows/CI.yml)
 [![NPM version](https://badge.fury.io/js/xp-as.png)](http://badge.fury.io/js/xp-as)
@@ -36,13 +36,13 @@ Export attributes from adorned element via a predictable API.
 
 A number of shortcuts are available:
 
-In less formal environments, and/or in environments where this element enhancement is widely used, we can replace the relatively short *xp-as* with an even shorter name, such as  📎, which this package supports.  On Windows OS, you can access this emoji by typing 🪟 + "." and search for "clippy".  So this also works if one references 📎.js instead of emc.js:
+In less formal environments, and/or in environments where this element enhancement is widely used, we can replace the relatively short *xp-as* with an even shorter name, such as  �, which this package supports.  On Windows OS, you can access this emoji by typing 🪟 + "." and search for "clippy".  So this also works if one references �.js instead of emc.js:
 
 
 ```html
 <table>
     <tr id=testRow aria-rowindex=11
-        📎📎-a=aria-rowindex
+        ��-a=aria-rowindex
     >
         <td>
             ...
@@ -50,7 +50,7 @@ In less formal environments, and/or in environments where this element enhanceme
     </tr>
 </table>
 <script>
-    const xpAs = testRow.beEnhanced.📎;
+    const xpAs = testRow.beEnhanced.�;
     console.log(xpAs.props.a - 3);
     // 8
     xpAs.props.addEventListener('a', e => {
